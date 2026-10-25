@@ -1,0 +1,99 @@
+/* Персонажи: спокойная анимация в своём ритме, реакция на наведение и клик.
+   Покой задаёт transform, наведение — scale, клик — отдельная анимация translate/rotate,
+   поэтому они не перебивают друг друга и не трогают положение в макете. */
+.character {
+    --speed: 4s;
+    animation: var(--idle, none) var(--speed) ease-in-out infinite;
+    transition: scale 0.2s ease;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.character:hover {
+    scale: 1.06;
+}
+
+.character.is-playing {
+    animation:
+        var(--idle, none) var(--speed) ease-in-out infinite,
+        character-play 0.7s ease-out;
+}
+
+.character--sway {
+    --idle: character-sway;
+}
+
+.character--bounce {
+    --idle: character-bounce;
+}
+
+.character--breathe {
+    --idle: character-breathe;
+}
+
+.character--tilt {
+    --idle: character-tilt;
+}
+
+@keyframes character-sway {
+    0%, 100% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+}
+
+@keyframes character-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-4%); }
+}
+
+@keyframes character-breathe {
+    0%, 100% { transform: scale(1, 1); }
+    50% { transform: scale(1.03, 0.97); }
+}
+
+@keyframes character-tilt {
+    0%, 70%, 100% { transform: rotate(0); }
+    80% { transform: rotate(-6deg); }
+    90% { transform: rotate(4deg); }
+}
+
+@keyframes character-play {
+    0% { translate: 0 0; rotate: 0deg; }
+    30% { translate: 0 -18%; rotate: -12deg; }
+    55% { translate: 0 0; rotate: 10deg; }
+    75% { translate: 0 -6%; rotate: -4deg; }
+    100% { translate: 0 0; rotate: 0deg; }
+}
+
+/* Экран 8 */
+.marquee__track {
+    animation: marquee 28s linear infinite;
+}
+
+.marquee:hover .marquee__track {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .character,
+    .character.is-playing,
+    .marquee__track {
+        animation: none;
+    }
+
+    .character,
+    .modal,
+    .modal__window,
+    .menu {
+        transition: none;
+    }
+}

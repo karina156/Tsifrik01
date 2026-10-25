@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>цифрик — о нас</title>
+    <meta name="description" content="цифрик — медиа о цифровой безопасности для детей">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script type="module" src="javascripts/index.js"></script>
+</head>
+<body>
+    <!-- Экран 1 -->
+    <header class="header">
+        <a class="header__logo" href="index.html">
+            <img src="images/titles/logo.svg" width="125" height="35" alt="цифрик">
+        </a>
+
+        <nav class="nav" aria-label="Основное меню">
+            <a class="nav__link nav__link--active" href="index.html">о нас</a>
+            <a class="nav__link" href="pages/stories.html">истории</a>
+            <a class="nav__link" href="pages/tests.html">тесты</a>
+            <a class="nav__link" href="pages/games.html">игры</a>
+        </nav>
+
+        <a class="button button--dark header__cta" href="#form">в список ожидания</a>
+
+        <button class="burger js-menu-open" type="button" aria-label="Открыть меню" aria-controls="menu" aria-expanded="false">
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Экран 2 -->
+        <!-- Первый экран свёрстан только в HTML: расположение задано атрибутами style, в rem -->
+        <section class="hero-desktop" style="position: relative; height: 71.5rem; overflow: hidden;">
+            <div style="position: absolute; left: 0; top: 28.4rem; width: 100%; height: 29.4rem; background: #ceeefb;"></div>
+
+            <h1 style="position: absolute; left: 32.7rem; top: 6.6rem; width: 79.8rem; margin: 0;">
+                <img src="images/titles/hero-title.svg" width="798" height="220" alt="цифрик" style="width: 100%; height: auto;">
+            </h1>
+            <p style="position: absolute; left: 41.5rem; top: 28.6rem; width: 58.3rem; margin: 0; font-size: 4rem; line-height: 4.3rem; font-weight: 400; text-align: center;">медиа о цифровой безопасности для детей</p>
+
+            <img class="character character--sway" src="images/characters/star-big.svg" alt="" style="position: absolute; left: -23.5rem; top: 31.4rem; width: 26.8rem; --speed: 5.2s;">
+            <img class="character character--bounce" src="images/characters/hero-ampersand.svg" alt="" style="position: absolute; left: 10.1rem; top: 31.3rem; width: 15rem; --speed: 3.4s;">
+            <img class="character character--tilt" src="images/characters/hero-percent.svg" alt="" style="position: absolute; left: 33.1rem; top: 36.7rem; width: 16.1rem; --speed: 4.6s;">
+            <img class="character character--breathe" src="images/characters/hero-star.svg" alt="" style="position: absolute; left: 61.1rem; top: 40.9rem; width: 16.8rem; --speed: 3.8s;">
+            <img class="character character--bounce" src="images/characters/hero-question.svg" alt="" style="position: absolute; left: 89.5rem; top: 37.2rem; width: 11.9rem; --speed: 4.1s;">
+            <img class="character character--sway" src="images/characters/hero-hash.svg" alt="" style="position: absolute; left: 106.6rem; top: 31.4rem; width: 18.5rem; --speed: 5.6s;">
+            <img class="character character--tilt" src="images/characters/star-big.svg" alt="" style="position: absolute; left: 130.7rem; top: 31rem; width: 26.8rem; --speed: 4.9s;">
+
+            <img src="images/decor/cursor-blue.svg" alt="" style="position: absolute; left: 21.6rem; top: 3.4rem; width: 6rem;">
+            <img src="images/decor/sticker-life.svg" alt="" style="position: absolute; left: 108.6rem; top: 22.6rem; width: 11.4rem;">
+            <img src="images/decor/quotes.svg" alt="" style="position: absolute; left: 126.2rem; top: 22.6rem; width: 8.3rem;">
+            <img src="images/decor/arrows.svg" alt="" style="position: absolute; left: 128.6rem; top: 7.5rem; width: 8.1rem;">
+            <img src="images/decor/arrows.svg" alt="" style="position: absolute; left: 21.1rem; top: 61.6rem; width: 8.1rem;">
+            <img src="images/decor/sticker-arrows.svg" alt="" style="position: absolute; left: 24.3rem; top: 45.8rem; width: 5.5rem;">
+            <img src="images/decor/face-semicolon.svg" alt="" style="position: absolute; left: 131.5rem; top: 55.5rem; width: 1.6rem;">
+            <img src="images/decor/face-brace.svg" alt="" style="position: absolute; left: 132.6rem; top: 55.3rem; width: 3.1rem;">
+            <img src="images/decor/bars.svg" alt="" style="position: absolute; left: 7.1rem; top: 58.7rem; width: 12.5rem;">
+        </section>
+
+        <!-- Мобильная версия первого экрана: тоже только HTML, координаты макета 390 -->
+        <section class="hero-mobile" style="position: relative; height: 42.7rem; overflow: hidden;">
+            <div style="position: absolute; left: 0; top: 22.7rem; width: 100%; height: 14.7rem; background: #ceeefb;"></div>
+
+            <div style="position: relative; width: 39rem; height: 100%; margin: 0 auto;">
+                <p style="position: absolute; left: 2.3rem; top: 4.4rem; width: 34.4rem; margin: 0;">
+                    <img src="images/titles/hero-title.svg" width="798" height="220" alt="цифрик" style="width: 100%; height: auto;">
+                </p>
+                <p style="position: absolute; left: 7.7rem; top: 15.5rem; width: 23.6rem; margin: 0; font-size: 2rem; line-height: 1.3; text-align: center;">медиа о цифровой безопасности для детей</p>
+
+                <img src="images/decor/quotes.svg" alt="" style="position: absolute; left: 31.2rem; top: 19.7rem; width: 5.8rem;">
+                <img class="character character--sway" src="images/characters/star-big.svg" alt="" style="position: absolute; left: -11.75rem; top: 24.2rem; width: 13.4rem; --speed: 5.2s;">
+                <img class="character character--bounce" src="images/characters/hero-ampersand.svg" alt="" style="position: absolute; left: 2.35rem; top: 24.15rem; width: 7.5rem; --speed: 3.4s;">
+                <img src="images/decor/sticker-arrows.svg" alt="" style="position: absolute; left: 9.5rem; top: 31.4rem; width: 2.75rem;">
+                <img class="character character--breathe" src="images/characters/hero-star.svg" alt="" style="position: absolute; left: 12.95rem; top: 28.9rem; width: 8.4rem; --speed: 3.8s;">
+                <img class="character character--tilt" src="images/characters/hero-hash.svg" alt="" style="position: absolute; left: 22.1rem; top: 24.2rem; width: 9.25rem; --speed: 4.6s;">
+                <img class="character character--sway" src="images/characters/star-big.svg" alt="" style="position: absolute; left: 32.05rem; top: 24rem; width: 13.4rem; --speed: 4.9s;">
+            </div>
+        </section>
+
+        <!-- Экран 3 -->
+        <section class="features" aria-label="О проекте">
+            <article class="window feature feature--blue">
+                <div class="window__bar">
+                    <img src="images/decor/window-dots.svg" width="43" height="11" alt="">
+                    <span class="window__url">tsifrik.media.adc</span>
+                    <img class="window__arrow" src="images/decor/arrow.svg" width="38" height="21" alt="">
+                </div>
+                <h2 class="feature__title">
+                    <img src="images/titles/feature-1.svg" width="368" height="132" alt="реальные (ситуации)">
+                </h2>
+                <p class="feature__text">разбираем то, что правда может встретиться в играх, чатах и соцсетях</p>
+            </article>
+
+            <article class="window feature feature--green">
+                <div class="window__bar">
+                    <img src="images/decor/window-dots.svg" width="43" height="11" alt="">
+                    <span class="window__url">tsifrik.media.adc</span>
+                    <img class="window__arrow" src="images/decor/arrow.svg" width="38" height="21" alt="">
+                </div>
+                <h2 class="feature__title">
+                    <img src="images/titles/feature-2.svg" width="368" height="132" alt="(без) нравоучений">
+                </h2>
+                <p class="feature__text">доносим материал в легком игровом формате</p>
+            </article>
+
+            <article class="window feature feature--lilac">
+                <div class="window__bar">
+                    <img src="images/decor/window-dots.svg" width="43" height="11" alt="">
+                    <span class="window__url">tsifrik.media.adc</span>
+                    <img class="window__arrow" src="images/decor/arrow.svg" width="38" height="21" alt="">
+                </div>
+                <h2 class="feature__title">
+                    <img src="images/titles/feature-3.svg" width="368" height="134" alt="для реальной (жизни)">
+                </h2>
+                <p class="feature__text">научим проверять информацию и защищать свои данные</p>
+            </article>
+        </section>
+
+        <!-- Экран 4 -->
+        <section class="interactives">
+            <div class="interactives__intro">
+                <h2 class="section-title">
+                    <img src="images/titles/interactives.svg" width="582" height="78" alt="интерактивы">
+                </h2>
+                <p class="interactives__lead">учись на ситуациях, которые могут случиться с каждым!</p>
+            </div>
+
+            <img class="character character--tilt interactives__character" src="images/characters/interactives-hash.svg" width="522" height="509" alt="" style="--speed: 4.4s;">
+            <img class="interactives__cursor" src="images/decor/cursor-blue-small.svg" width="98" height="94" alt="">
+            <img class="interactives__quotes" src="images/decor/quotes.svg" width="83" height="59" alt="">
+
+            <p class="interactives__caption">выбирай тему, проходи 3 уровня сложности и тренируйся действовать уверенно в интернете.</p>
+
+            <div class="interactives__list">
+                <article class="topic topic--blue is-open">
+                    <div class="topic__head">
+                        <h3><img src="images/titles/stories.svg" width="152" height="33" alt="истории"></h3>
+                        <button class="topic__toggle js-topic-toggle" type="button" aria-expanded="true" aria-controls="topic-stories" aria-label="Свернуть «истории»">
+                            <img src="images/decor/plus.svg" width="10" height="10" alt="">
+                        </button>
+                    </div>
+                    <div class="topic__body" id="topic-stories">
+                        <p class="topic__text">прочитай истории других ребят, чтобы не повторить их ошибок</p>
+                        <div class="topic__footer">
+                            <ul class="tags">
+                                <li><img src="images/tags/scam.svg" width="180" height="30" alt="#мошенники_в_играх"></li>
+                                <li><img src="images/tags/fakes.svg" width="68" height="30" alt="#фейки"></li>
+                            </ul>
+                            <a class="button button--dark button--small" href="pages/stories.html">читать</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="topic topic--pink is-open">
+                    <div class="topic__head">
+                        <h3><img src="images/titles/tests.svg" width="113" height="25" alt="тесты"></h3>
+                        <button class="topic__toggle js-topic-toggle" type="button" aria-expanded="true" aria-controls="topic-tests" aria-label="Свернуть «тесты»">
+                            <img src="images/decor/plus.svg" width="10" height="10" alt="">
+                        </button>
+                    </div>
+                    <div class="topic__body" id="topic-tests">
+                        <p class="topic__text">короткие вопросы про знакомые ситуации: переписки, личные данные</p>
+                        <div class="topic__footer">
+                            <ul class="tags">
+                                <li><img src="images/tags/five-minutes.svg" width="81" height="30" alt="#5 минут"></li>
+                                <li><img src="images/tags/ten-questions.svg" width="110" height="30" alt="#10 вопросов"></li>
+                            </ul>
+                            <a class="button button--dark button--small" href="pages/tests.html">пройти</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="topic topic--green is-open">
+                    <div class="topic__head">
+                        <h3><img src="images/titles/games.svg" width="91" height="33" alt="игры"></h3>
+                        <button class="topic__toggle js-topic-toggle" type="button" aria-expanded="true" aria-controls="topic-games" aria-label="Свернуть «игры»">
+                            <img src="images/decor/plus.svg" width="10" height="10" alt="">
+                        </button>
+                    </div>
+                    <div class="topic__body" id="topic-games">
+                        <p class="topic__text">мини-игры, в которых нужно замечать подозрительные детали</p>
+                        <div class="topic__footer">
+                            <ul class="tags">
+                                <li><img src="images/tags/phishing.svg" width="135" height="30" alt="#найди_фишинг"></li>
+                                <li><img src="images/tags/password.svg" width="136" height="30" alt="#собери_пароль"></li>
+                            </ul>
+                            <a class="button button--dark button--small" href="pages/games.html">играть</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Экран 5 -->
+        <section class="socials">
+            <h2 class="section-title">
+                <img src="images/titles/socials.svg" width="620" height="66" alt="наши соцсети">
+            </h2>
+
+            <div class="socials__list">
+                <div class="socials__item">
+                    <a class="window social social--vk" href="https://vk.com/" target="_blank" rel="noopener">
+                        <span class="window__bar">
+                            <img src="images/decor/window-dots.svg" width="43" height="11" alt="">
+                            <span class="window__url">vk.tsifrik.media.adc</span>
+                            <img class="window__arrow" src="images/decor/arrow.svg" width="38" height="21" alt="">
+                        </span>
+                        <span class="social__head">
+                            <span class="social__name">цифрик (вконтакте)</span>
+                            <span class="social__avatar"><img class="character character--bounce" src="images/characters/avatar-vk.svg" width="82" height="79" alt="" style="--speed: 3.6s;"></span>
+                        </span>
+                        <span class="social__posts">
+                            <span class="social__post social__post--blue"><img class="character character--breathe" src="images/characters/post-percent.svg" width="156" height="150" alt="" style="--speed: 4.2s;"></span>
+                            <span class="social__post social__post--lilac"><img class="character character--sway" src="images/characters/post-hash.svg" width="156" height="150" alt="" style="--speed: 5s;"></span>
+                            <span class="social__post social__post--pink"><img class="character character--tilt" src="images/characters/post-question.svg" width="156" height="150" alt="" style="--speed: 3.9s;"></span>
+                        </span>
+                    </a>
+                    <p class="caption">подписывайтесь, чтобы вместе разбираться, как действовать в интернете уверенно</p>
+                </div>
+
+                <div class="socials__item">
+                    <a class="window social social--insta" href="https://instagram.com/" target="_blank" rel="noopener">
+                        <span class="window__bar">
+                            <img src="images/decor/window-dots.svg" width="43" height="11" alt="">
+                            <span class="window__url">instagram.tsifrik.media.adc*</span>
+                            <img class="window__arrow" src="images/decor/arrow.svg" width="38" height="21" alt="">
+                        </span>
+                        <span class="social__head">
+                            <span class="social__name">цифрик (инстаграм*)</span>
+                            <span class="social__avatar"><img class="character character--sway" src="images/characters/avatar-insta.svg" width="82" height="79" alt="" style="--speed: 4.4s;"></span>
+                        </span>
+                        <span class="social__posts">
+                            <span class="social__post social__post--blue"><img class="character character--tilt" src="images/characters/post-percent.svg" width="156" height="150" alt="" style="--speed: 4.8s;"></span>
+                            <span class="social__post social__post--lilac"><img class="character character--bounce" src="images/characters/post-hash.svg" width="156" height="150" alt="" style="--speed: 3.5s;"></span>
+                            <span class="social__post social__post--pink"><img class="character character--breathe" src="images/characters/post-question.svg" width="156" height="150" alt="" style="--speed: 4.5s;"></span>
+                        </span>
+                    </a>
+                    <p class="caption caption--small">*организация признана экстремистской на территории рф</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Экран 6 -->
+        <section class="subscribe" id="form">
+            <img class="character character--breathe subscribe__character" src="images/characters/form-ampersand.svg" width="620" height="608" alt="" style="--speed: 4.8s;">
+            <img class="subscribe__sticker" src="images/decor/sticker-friend.svg" width="113" height="39" alt="">
+            <img class="subscribe__quotes" src="images/decor/quotes.svg" width="83" height="59" alt="">
+            <img class="subscribe__cursor" src="images/decor/cursor-lilac.svg" width="78" height="72" alt="">
+
+            <div class="window subscribe__window">
+                <div class="window__bar">
+                    <img src="images/decor/window-dots.svg" width="43" height="11" alt="">
+                    <span class="window__url">tsifrik.media.adc</span>
+                </div>
+                <div class="subscribe__body">
+                    <h2 class="display">давай дружить!</h2>
+                    <p class="subscribe__text">оставь почту, чтобы получать новости о нашем медиа!</p>
+
+                    <!-- Точка подключения бэкенда: адрес формы в action (сейчас Formspree, как в HSEADC/Tsifrik) -->
+                    <form class="subscribe__form js-subscribe-form" action="https://formspree.io/f/xnpnlgwj" method="POST" novalidate>
+                        <label class="visually-hidden" for="subscribe-email">почта</label>
+                        <input class="subscribe__input" id="subscribe-email" type="email" name="email" placeholder="почта" autocomplete="email" required aria-describedby="subscribe-status">
+                        <button class="subscribe__send" type="submit" aria-label="Отправить">
+                            <img src="images/decor/arrow-light.svg" width="38" height="21" alt="">
+                        </button>
+                    </form>
+                    <p class="subscribe__status js-form-status" id="subscribe-status" aria-live="polite"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Экран 7 -->
+        <section class="team">
+            <h2 class="section-title">
+                <img src="images/titles/team.svg" width="460" height="78" alt="да, это мы">
+            </h2>
+            <div class="team__photos">
+                <img class="team__photo team__photo--first" src="images/team/team-1.webp" width="549" height="549" alt="Девочка в зелёной кофте рисует на планшете">
+                <img class="team__photo team__photo--second" src="images/team/team-2.webp" width="549" height="549" alt="Девочка в полосатой футболке играет на планшете">
+                <p class="team__caption">Алинка и Каринка очень старались над этим проектом! спасибо им!</p>
+            </div>
+        </section>
+
+        <!-- Экран 8 -->
+        <section class="marquee" aria-label="цифрик медиа">
+            <div class="marquee__track">
+                <div class="marquee__group">
+                    <img class="character character--bounce" src="images/characters/marquee-green.svg" width="182" height="164" alt="" style="--speed: 3.6s;">
+                    <img class="marquee__word" src="images/titles/marquee-tsifrik.svg" width="332" height="96" alt="цифрик">
+                    <img class="character character--sway" src="images/characters/marquee-pink.svg" width="182" height="164" alt="" style="--speed: 4.6s;">
+                    <img class="marquee__word marquee__word--media" src="images/titles/marquee-media.svg" width="276" height="66" alt="медиа">
+
+                    <img class="character character--bounce" src="images/characters/marquee-green.svg" width="182" height="164" alt="" style="--speed: 3.6s;">
+                    <img class="marquee__word" src="images/titles/marquee-tsifrik.svg" width="332" height="96" alt="">
+                    <img class="character character--sway" src="images/characters/marquee-pink.svg" width="182" height="164" alt="" style="--speed: 4.6s;">
+                    <img class="marquee__word marquee__word--media" src="images/titles/marquee-media.svg" width="276" height="66" alt="">
+                </div>
+                <div class="marquee__group" aria-hidden="true">
+                    <img class="character character--bounce" src="images/characters/marquee-green.svg" width="182" height="164" alt="" style="--speed: 3.6s;">
+                    <img class="marquee__word" src="images/titles/marquee-tsifrik.svg" width="332" height="96" alt="">
+                    <img class="character character--sway" src="images/characters/marquee-pink.svg" width="182" height="164" alt="" style="--speed: 4.6s;">
+                    <img class="marquee__word marquee__word--media" src="images/titles/marquee-media.svg" width="276" height="66" alt="">
+
+                    <img class="character character--bounce" src="images/characters/marquee-green.svg" width="182" height="164" alt="" style="--speed: 3.6s;">
+                    <img class="marquee__word" src="images/titles/marquee-tsifrik.svg" width="332" height="96" alt="">
+                    <img class="character character--sway" src="images/characters/marquee-pink.svg" width="182" height="164" alt="" style="--speed: 4.6s;">
+                    <img class="marquee__word marquee__word--media" src="images/titles/marquee-media.svg" width="276" height="66" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Экран 9 -->
+    <footer class="footer">
+        <div class="footer__bar">
+            <img src="images/decor/window-dots-white.svg" width="43" height="11" alt="">
+            <span class="footer__url">tsifrik.media.adc</span>
+            <div class="footer__icons">
+                <a href="https://vk.com/" target="_blank" rel="noopener" aria-label="вконтакте"><img src="images/decor/icon-vk.svg" width="40" height="40" alt=""></a>
+                <a href="https://t.me/" target="_blank" rel="noopener" aria-label="телеграм"><img src="images/decor/icon-tg.svg" width="40" height="40" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer__columns">
+            <nav class="footer__links" aria-label="Навигация в подвале">
+                <div class="footer__group">
+                    <p class="footer__heading">навигация</p>
+                    <a href="index.html">о нас</a>
+                    <a href="pages/stories.html">истории</a>
+                    <a href="pages/tests.html">тесты</a>
+                    <a href="pages/games.html">игры</a>
+                </div>
+                <div class="footer__group">
+                    <p class="footer__heading">соцсети</p>
+                    <a href="https://vk.com/" target="_blank" rel="noopener">вконтакте</a>
+                    <a href="https://instagram.com/" target="_blank" rel="noopener">инстаграм*</a>
+                </div>
+            </nav>
+
+            <div class="footer__aside">
+                <div class="footer__decor">
+                    <img src="images/decor/cursor-pink.svg" width="78" height="72" alt="">
+                    <img src="images/decor/quotes.svg" width="83" height="59" alt="">
+                </div>
+                <a class="button button--light" href="#form">давай дружить! →</a>
+                <p class="footer__note">*организация признана экстремистской на территории рф</p>
+            </div>
+        </div>
+
+        <div class="footer__wordmark">
+            <img class="footer__wordmark-image" src="images/titles/wordmark.svg" width="1440" height="398" alt="цифрик">
+            <img class="footer__sticker footer__sticker--stories" src="images/tags/stories.svg" width="187" height="42" alt="">
+            <img class="footer__sticker footer__sticker--about" src="images/tags/about.svg" width="137" height="42" alt="">
+            <img class="footer__sticker footer__sticker--tests" src="images/tags/tests.svg" width="147" height="42" alt="">
+            <img class="footer__sticker footer__sticker--games" src="images/tags/games.svg" width="128" height="42" alt="">
+            <img class="footer__sticker footer__sticker--form" src="images/tags/form.svg" width="157" height="42" alt="">
+        </div>
+    </footer>
+
+    <!-- Экран 10 -->
+    <div class="menu" id="menu" hidden>
+        <div class="menu__head">
+            <img src="images/titles/logo.svg" width="125" height="35" alt="цифрик">
+            <button class="menu__close js-menu-close" type="button" aria-label="Закрыть меню"></button>
+        </div>
+        <nav class="window menu__window" aria-label="Мобильное меню">
+            <div class="window__bar">
+                <img src="images/decor/window-dots.svg" width="43" height="11" alt="">
+                <span class="window__url">tsifrik.media.adc</span>
+            </div>
+            <a class="menu__link js-menu-link" href="index.html">о нас <img src="images/decor/arrow.svg" width="38" height="21" alt=""></a>
+            <a class="menu__link js-menu-link" href="pages/stories.html">истории <img src="images/decor/arrow.svg" width="38" height="21" alt=""></a>
+            <a class="menu__link js-menu-link" href="pages/tests.html">тесты <img src="images/decor/arrow.svg" width="38" height="21" alt=""></a>
+            <a class="menu__link js-menu-link" href="pages/games.html">игры <img src="images/decor/arrow.svg" width="38" height="21" alt=""></a>
+        </nav>
+        <a class="button button--dark menu__cta js-menu-link" href="#form">в список ожидания</a>
+        <div class="menu__socials">
+            <a href="https://vk.com/" target="_blank" rel="noopener" aria-label="вконтакте"><img src="images/decor/icon-vk-dark.svg" width="40" height="40" alt=""></a>
+            <a href="https://t.me/" target="_blank" rel="noopener" aria-label="телеграм"><img src="images/decor/icon-tg-dark.svg" width="40" height="40" alt=""></a>
+            <span>мы в соцсетях</span>
+        </div>
+        <div class="menu__stripe">
+            <img class="character character--bounce" src="images/characters/post-hash.svg" width="156" height="150" alt="" style="--speed: 3.8s;">
+            <img class="character character--tilt" src="images/characters/post-percent.svg" width="156" height="150" alt="" style="--speed: 4.6s;">
+            <img class="character character--sway" src="images/characters/avatar-vk.svg" width="82" height="79" alt="" style="--speed: 5s;">
+        </div>
+    </div>
+
+    <!-- Экран 11 -->
+    <div class="modal js-modal" hidden>
+        <div class="modal__window window" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+            <div class="window__bar modal__bar">
+                <img src="images/decor/window-dots.svg" width="43" height="11" alt="">
+                <button class="modal__close js-modal-close" type="button" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal__body">
+                <h2 class="display" id="modal-title">ты в списке!</h2>
+                <p class="modal__text">мы напишем на почту, как только медиа запустится</p>
+                <button class="button button--dark js-modal-close" type="button">отлично</button>
+            </div>
+            <img class="character character--bounce modal__character" src="images/characters/modal-star.svg" width="195" height="188" alt="" style="--speed: 3.4s;">
+        </div>
+    </div>
+</body>
+</html>
