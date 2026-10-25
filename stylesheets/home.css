@@ -1,0 +1,501 @@
+/* Экран 3 */
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    padding: 12rem 8rem 8rem;
+}
+
+.feature {
+    min-height: 39.4rem;
+    margin: 1.2rem 0 0 1.2rem;
+    box-shadow: -1.2rem -1.2rem 0 var(--shadow-color);
+}
+
+.feature--blue {
+    --shadow-color: var(--color-brand);
+}
+
+.feature--green {
+    --shadow-color: var(--color-green);
+}
+
+.feature--lilac {
+    --shadow-color: var(--color-lilac);
+}
+
+.feature__title img {
+    width: 36.8rem;
+}
+
+.feature__text {
+    padding: 0 2.4rem 2.4rem;
+}
+
+/* Экран 4 */
+.interactives {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 61.6rem;
+    grid-template-rows: auto 1fr;
+    padding: 14rem 8rem 8rem;
+}
+
+.interactives__intro {
+    grid-area: 1 / 1;
+}
+
+.interactives__lead {
+    max-width: 42rem;
+    margin-top: 1.6rem;
+}
+
+.interactives__caption {
+    grid-area: 2 / 1;
+    align-self: end;
+    max-width: 30rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+    color: var(--color-secondary);
+}
+
+.interactives__character {
+    position: absolute;
+    left: 41.9rem;
+    top: 21.2rem;
+    width: 52.2rem;
+}
+
+.interactives__cursor {
+    position: absolute;
+    left: 31.3rem;
+    top: 51.6rem;
+    width: 9.8rem;
+}
+
+.interactives__quotes {
+    position: absolute;
+    left: 8rem;
+    top: 59.4rem;
+    width: 8.3rem;
+}
+
+.interactives__list {
+    grid-area: 1 / 2 / 3 / 3;
+    position: relative;
+}
+
+.topic {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2.4rem;
+    border: 0.2rem solid var(--color-text);
+    border-radius: 1rem;
+    background-color: #fff;
+    transition: box-shadow 0.2s;
+}
+
+.topic + .topic {
+    margin-top: -1.8rem;
+}
+
+.topic:hover {
+    box-shadow: -1.2rem 0 0 var(--shadow-color);
+}
+
+.topic--blue {
+    --shadow-color: var(--color-brand);
+}
+
+.topic--pink {
+    --shadow-color: var(--color-pink);
+}
+
+.topic--green {
+    --shadow-color: var(--color-green);
+}
+
+.topic__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topic__head h3 img {
+    width: auto;
+    height: 3.3rem;
+}
+
+.topic__head h3 img[alt='тесты'] {
+    height: 2.5rem;
+}
+
+.topic__toggle {
+    display: grid;
+    place-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: var(--color-text);
+    transition: background-color 0.2s, rotate 0.25s;
+}
+
+.topic__toggle:hover {
+    background-color: var(--color-hover);
+}
+
+.topic__toggle img {
+    width: 1rem;
+}
+
+.topic:not(.is-open) .topic__toggle {
+    rotate: 90deg;
+}
+
+.topic__body {
+    display: grid;
+    gap: 1.2rem;
+}
+
+.topic:not(.is-open) .topic__body {
+    display: none;
+}
+
+.topic__footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1.2rem;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.tags img {
+    width: auto;
+    height: 3rem;
+}
+
+/* Экран 5 */
+.socials {
+    position: relative;
+    padding: 12rem 8rem 7.5rem;
+}
+
+.socials::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 15.7rem;
+    height: 30rem;
+    background-color: var(--color-band);
+}
+
+.socials .section-title {
+    position: relative;
+}
+
+.socials .section-title img {
+    height: 6.6rem;
+}
+
+.socials__list {
+    position: relative;
+    display: flex;
+    gap: 6.4rem;
+    margin-top: 6.5rem;
+    padding-left: 12.4rem;
+}
+
+.socials__item {
+    width: 48rem;
+}
+
+.social--vk {
+    box-shadow: -1.2rem -1.2rem 0 var(--color-brand);
+}
+
+.social--insta {
+    box-shadow: -1.2rem 0 0 var(--color-pink);
+}
+
+.social__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.social__name {
+    max-width: 30rem;
+    font-size: 5.2rem;
+    line-height: 6rem;
+    letter-spacing: -0.052rem;
+}
+
+.social__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 7.2rem;
+    height: 7.2rem;
+    border: 0.2rem solid var(--color-text);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.social__avatar img {
+    flex-shrink: 0;
+    width: 10rem;
+    max-width: none;
+}
+
+.social__posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-top: 0.2rem solid var(--color-text);
+}
+
+.social__post {
+    display: grid;
+    place-items: center;
+    height: 15.6rem;
+    overflow: hidden;
+    border-radius: 0 0 0 0.8rem;
+}
+
+.social__post + .social__post {
+    border-left: 0.2rem solid var(--color-text);
+    border-radius: 0;
+}
+
+.social__post:last-child {
+    border-radius: 0 0 0.8rem 0;
+}
+
+.social__post img {
+    width: 15.6rem;
+}
+
+.social__post--blue {
+    background-color: var(--color-band);
+}
+
+.social__post--lilac {
+    background-color: var(--color-lilac);
+}
+
+.social__post--pink {
+    background-color: var(--color-pink);
+}
+
+/* Экран 6 */
+.subscribe {
+    position: relative;
+    height: 65.2rem;
+    padding-top: 12rem;
+    overflow: hidden;
+}
+
+.subscribe::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 28.9rem;
+    height: 28.9rem;
+    background-color: var(--color-pink);
+}
+
+.subscribe__window {
+    position: relative;
+    z-index: 2;
+    width: 66.6rem;
+    margin: 0 auto;
+    box-shadow: -1.2rem -1.2rem 0 var(--color-lilac);
+}
+
+.subscribe__body {
+    position: relative;
+    padding: 2.4rem 2.8rem 3.2rem;
+}
+
+.subscribe__text {
+    margin: 1.6rem 0 2.8rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+.subscribe__form {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    height: 7.6rem;
+    padding: 0.8rem 0.8rem 0.8rem 2.8rem;
+    border: 0.2rem solid transparent;
+    border-radius: 10rem;
+    background-color: var(--color-field);
+    transition: border-color 0.2s;
+}
+
+.subscribe__form.is-error {
+    border-color: var(--color-pink-bright);
+}
+
+.subscribe__form.is-success {
+    border-color: var(--color-green-dark);
+}
+
+.subscribe__input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    background: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    outline: none;
+}
+
+.subscribe__input::placeholder {
+    color: var(--color-secondary);
+}
+
+.subscribe__send {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    background-color: var(--color-text);
+    transition: background-color 0.2s;
+}
+
+.subscribe__send:hover {
+    background-color: var(--color-hover);
+}
+
+.subscribe__send img {
+    width: 2.6rem;
+}
+
+.subscribe__status {
+    position: absolute;
+    left: 5.6rem;
+    bottom: 0.8rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    font-weight: 400;
+}
+
+.subscribe__status.is-success {
+    color: var(--color-green-dark);
+}
+
+.subscribe__character {
+    position: absolute;
+    left: 82.9rem;
+    top: 4.35rem;
+    z-index: 1;
+    width: 62rem;
+}
+
+.subscribe__sticker {
+    position: absolute;
+    left: 102rem;
+    top: 6.4rem;
+    width: 11.3rem;
+}
+
+.subscribe__quotes {
+    position: absolute;
+    left: 15.4rem;
+    top: 18rem;
+    width: 8.3rem;
+}
+
+.subscribe__cursor {
+    position: absolute;
+    left: 20rem;
+    top: 32.6rem;
+    width: 7.8rem;
+}
+
+/* Экран 7 */
+.team {
+    padding: 4.6rem 8rem 10rem;
+}
+
+.team__photos {
+    position: relative;
+    height: 67.7rem;
+    margin-top: 4rem;
+}
+
+.team__photo {
+    position: absolute;
+    width: 54.8rem;
+}
+
+.team__photo--first {
+    left: 6.4rem;
+    top: 5.4rem;
+}
+
+.team__photo--second {
+    left: 58.8rem;
+    top: -0.9rem;
+}
+
+.team__caption {
+    position: absolute;
+    left: 86.3rem;
+    top: 55.4rem;
+    width: 37.4rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+/* Экран 8 */
+.marquee {
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+.marquee__track {
+    display: flex;
+    width: max-content;
+}
+
+.marquee__group {
+    display: flex;
+    align-items: center;
+    gap: 4.2rem;
+    padding-right: 4.2rem;
+}
+
+.marquee__group .character {
+    width: 18.2rem;
+}
+
+.marquee__word {
+    width: 33.2rem;
+}
+
+.marquee__word--media {
+    width: 27.6rem;
+    margin-top: 0.6rem;
+}
